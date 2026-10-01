@@ -1,0 +1,2 @@
+/* 2 levels up, aka grandparent */
+:has(> * > [data-field-group-inactive]) { display: none !important; }

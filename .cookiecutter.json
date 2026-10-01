@@ -1,0 +1,30 @@
+{
+    "cookiecutter": {
+        "codeowner_github_usernames": "",
+        "full_name": "Network to Code, LLC",
+        "email": "info@networktocode.com",
+        "github_org": "nautobot",
+        "app_name": "field_groups",
+        "verbose_name": "Field Groups",
+        "app_slug": "field-groups",
+        "project_slug": "nautobot-app-field-groups",
+        "repo_url": "https://github.com/nautobot/nautobot-app-field-groups",
+        "base_url": "field-groups",
+        "camel_name": "FieldGroups",
+        "project_short_description": "Field Groups",
+        "model_class_name": "FieldGroupsExampleModel",
+        "open_source_license": "Apache-2.0",
+        "docs_base_url": "https://docs.nautobot.com",
+        "docs_app_url": "https://docs.nautobot.com/projects/field-groups/en/latest",
+        "__commercial": false,
+        "_extensions": [
+            "local_extensions.camel_case_to_kebab",
+            "local_extensions.camel_case_to_words",
+            "local_extensions.NautobotVersions"
+        ],
+        "_template": "https://github.com/nautobot/cookiecutter-nautobot-app.git",
+        "_output_dir": "/Users/curtnorris/outputs",
+        "_repo_dir": "/Users/curtnorris/.cookiecutters/cookiecutter-nautobot-app/nautobot-app",
+        "_checkout": null
+    }
+}

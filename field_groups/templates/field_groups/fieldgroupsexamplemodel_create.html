@@ -1,0 +1,14 @@
+{% extends "generic/object_create.html" %}
+{% load static %}
+
+{% block extra_styles %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'field_groups/css/field_groups.css' %}">
+{% endblock extra_styles %}
+
+{% block javascript %}
+    {{ block.super }}
+    <script src="{% static 'field_groups/js/field_groups.js' %}"></script>
+    <script src="{% static 'field_groups/js/dependent_selects.js' %}"></script>
+    <script src="{% static 'field_groups/js/create_form.js' %}"></script>
+{% endblock javascript %}
