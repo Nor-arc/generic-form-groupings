@@ -118,6 +118,14 @@
                         control.disabled = !active;
                         if (control.hasAttribute("data-required-when-active")) {
                             control.required = active;
+                            // Core marks a required field's label with `nb-required`; the server
+                            // only does so for a group active on first render.
+                            const label = control.id
+                                ? wrapper.querySelector(`label[for="${window.CSS.escape(control.id)}"]`)
+                                : null;
+                            if (label) {
+                                label.classList.toggle("nb-required", active);
+                            }
                         }
                     });
                 });
